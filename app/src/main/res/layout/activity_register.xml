@@ -1,14 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.RegisterActivity"
-    android:orientation="horizontal">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_layout"
+        style="@style/til_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_user"
+            style="@style/til_form_inter"
+            android:hint="@string/name_user" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/last_name_layout"
+        style="@style/til_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/last_name_user"
+            style="@style/til_form_inter"
+            android:hint="@string/last_name_user" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nickname_layout"
+        style="@style/til_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nickname_user"
+            style="@style/til_form_inter"
+            android:hint="@string/nickname_user" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_layout"
+        style="@style/til_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo_forms"
+            android:hint="@string/email_user"
+
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        style="@style/til_form_pass">
+
+        <EditText
+            android:id="@+id/password_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo_forms"
+            android:hint="@string/password_user"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_seco_layout"
+        style="@style/til_form_pass">
+
+        <EditText
+            android:id="@+id/password_seco_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo_forms"
+            android:hint="@string/password_seco_user"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/gray_blue"
+        android:text="@string/btn_register" />
 
 
 </LinearLayout>

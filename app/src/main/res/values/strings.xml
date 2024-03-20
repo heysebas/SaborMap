@@ -11,9 +11,19 @@
     <string name="btn_google_login">Continuar con Google</string>
 
     <!-- ********************** Register ******************************-->
-    <string name="name_user">Nombre</string>
-    <string name="email_user">Correo</string>
-    <string name="nickname_user">Nombre de Usuario</string>
-    <string name="password_user">Contraseña</string>
+    <string name="name_user">Ingrese los nombres</string>
+    <string name="last_name_user">Ingrese los apellidos</string>
+    <string name="email_user">Ingrese el correo</string>
+    <string name="nickname_user">Ingrese el nombre de Usuario</string>
+    <string name="password_user">Ingrese la contraseña</string>
+    <string name="password_seco_user">Repita la contraseña</string>
+    <!--********************  Button Register   **********************-->
+    <string name="btn_register">Registrar</string>
+
+
+
+    <!-- **********************   Error *******************************-->
+    <string name="msg_error">Obligatorio</string>
+
 
 </resources>

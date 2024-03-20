@@ -1,6 +1,8 @@
 package com.hey.sabormap.activity
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,12 +24,33 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnStarLogin.setOnClickListener{login()}
+        binding.btnSingUpLogin.setOnClickListener { goRegister() }
 
+    }
+
+    fun goRegister() {
+        val intent = Intent(this, RegisterActivity::class.java)
+        startActivities(arrayOf(intent))
     }
 
     fun login(){
         val email = binding.emailUser.text.toString()
         val password = binding.passwordUser.text.toString()
+
+        if(email.isEmpty()){
+            binding.emailLayout.error =getString(R.string.msg_error)
+        }else{
+            binding.emailLayout.error = null
+        }
+
+        if(password.isEmpty()){
+            binding.passwordLayout.error =getString(R.string.msg_error)
+        }else{
+            binding.passwordLayout.error = null
+        }
+
+
+
 
         if (email.isNotEmpty() && password.isNotEmpty()){
 
@@ -39,8 +62,6 @@ class LoginActivity : AppCompatActivity() {
             }
 
 
-        }else{
-            Toast.makeText(this, "El campo esta vacio", Toast.LENGTH_LONG).show()
         }
     }
 }

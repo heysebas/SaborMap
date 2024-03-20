@@ -1,3 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources >
+
+    <style name="til_form">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="endIconTint">@color/gray_blue</item>
+        <item name="hintTextColor">@android:color/black</item>
+    </style>
+
+
+    <style name="til_form_inter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/fondo_forms</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+
+    <style name="til_form_pass">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="hintTextColor">@android:color/black</item>
+        <item name="passwordToggleDrawable">@drawable/show_password_selector</item>
+        <item name="passwordToggleEnabled">true</item>
+        <item name="passwordToggleTint">@color/gray_blue</item>
+    </style>
+
+
+    <style name="DialogoTitulo" parent="ThemeOverlay.AppCompat.Dialog.Alert"></style>
+
 </resources>

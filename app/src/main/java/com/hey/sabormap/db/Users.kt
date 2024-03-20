@@ -6,7 +6,7 @@ object Users {
     private val users: ArrayList<User> = ArrayList()
 
     init {
-        users.add(User(1, "sebas", "sebaz@email", "heysebas", "12345678"))
+        users.add(User(1, "sebas","grisales", "sebaz@email", "heysebas", "12345678"))
     }
 
     fun listar(): ArrayList<User> {
