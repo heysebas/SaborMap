@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DFDFDF"/>
+    
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableRight="@drawable/baseline_search_24"
+        android:hint="Escriba el lugar que desea buscar"/>
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Registrar"
+        android:layout_above="@id/btn_login"
+        android:layout_alignStart="@id/btn_login"
+        android:onClick="goRegister"
+        android:backgroundTint="@color/vibrant_blue"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="goLogin"
+        />
+
+</RelativeLayout>

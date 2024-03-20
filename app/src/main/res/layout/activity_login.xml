@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/off_white"
+    >
+
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logo"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/gray_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email_login"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/gray_blue"
+        app:passwordToggleDrawable="@drawable/show_password_selector">
+
+        <EditText
+            android:id="@+id/password_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password_login"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_star_login"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="@string/btn_star_login"
+            android:backgroundTint="@color/gray_blue"
+            />
+
+        <Button
+            android:id="@+id/btn_lost_password_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_lost_password_login"
+            android:textColor="@color/light_Gray"
+            android:backgroundTint="@color/off_white" />
+        <Button
+            android:id="@+id/btn_sing_up_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btn_sing_up_login"
+            android:textColor="@color/light_Gray"
+            android:backgroundTint="@color/off_white" />
+
+        <Button
+            android:id="@+id/btn_google_login"
+            android:layout_width="230dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/btn_google_login"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/logo_google2"
+            android:drawablePadding="8dp"
+            android:backgroundTint="@color/gray_blue" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

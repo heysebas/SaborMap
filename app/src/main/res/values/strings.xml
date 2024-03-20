@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SaborMap</string>
+
+    <!-- ************************ Login *******************************-->
+    <string name="enter_email_login">Ingrese el correo</string>
+    <string name="enter_password_login">Ingrese la contraseña</string>
+    <!--********************  Button Login   **************************-->
+    <string name="btn_star_login">Iniciar</string>
+    <string name="btn_lost_password_login">¿Perdiste tu contraseña?</string>
+    <string name="btn_sing_up_login">¿No tienes cuenta? Regístrate</string>
+    <string name="btn_google_login">Continuar con Google</string>
+
+    <!-- ********************** Register ******************************-->
+    <string name="name_user">Nombre</string>
+    <string name="email_user">Correo</string>
+    <string name="nickname_user">Nombre de Usuario</string>
+    <string name="password_user">Contraseña</string>
+
+</resources>

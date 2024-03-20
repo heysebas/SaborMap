@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    Color Fondo-->
+    <color name="off_white">#F5F5F5</color>
+
+<!--    color de Texto-->
+    <color name="light_Gray">#9C9B9B</color>
+    <color name="dark_Gray">#333333 </color>
+
+<!--Color de botones-->
+    <color name="gray_blue">#F6B069 </color>
+    <color name="vibrant_orange">#FFA500 </color>
+    <color name="vibrant_blue">#007BFF </color>
+
+
+</resources>
