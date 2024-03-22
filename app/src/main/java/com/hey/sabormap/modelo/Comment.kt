@@ -8,6 +8,5 @@ class Comment(
     var idUser: Int,
     var idPlace: Int,
     var qualification: Int,
-    var date: LocalDateTime
 ) {
 }

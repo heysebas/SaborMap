@@ -9,7 +9,7 @@
     <string name="btn_lost_password_login">¿Perdiste tu contraseña?</string>
     <string name="btn_sing_up_login">¿No tienes cuenta? Regístrate</string>
     <string name="btn_google_login">Continuar con Google</string>
-
+    <!-- ****************** Register site *****************************-->
     <!-- ********************** Register ******************************-->
     <string name="name_user">Ingrese los nombres</string>
     <string name="last_name_user">Ingrese los apellidos</string>
@@ -24,6 +24,15 @@
 
     <!-- **********************   Error *******************************-->
     <string name="msg_error">Obligatorio</string>
+
+
+    <!-- ****************** Register site *****************************-->
+    <string name="name_site">Ingrese el nombre del local</string>
+    <string name="description">Descripcion</string>
+    <string name="phone_site">Ingrese el numero celular</string>
+    <!--******************  Button Register site **********************-->
+    <string name="btn_register_site">Registrar Sitio</string>
+
 
 
 </resources>

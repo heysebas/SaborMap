@@ -63,7 +63,8 @@
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:backgroundTint="@color/gray_blue"
-            android:text="@string/btn_star_login" />
+            android:text="@string/btn_star_login"
+            android:textSize="12dp"/>
 
         <Button
             android:id="@+id/btn_lost_password_login"
@@ -91,11 +92,11 @@
             android:layout_width="230dp"
             android:layout_height="70dp"
             android:layout_marginTop="30dp"
-            android:backgroundTint="@color/gray_blue"
-            android:drawableLeft="@drawable/logo_google2"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/logo_google_3"
             android:drawablePadding="8dp"
             android:text="@string/btn_google_login"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black" />
 
 
     </LinearLayout>

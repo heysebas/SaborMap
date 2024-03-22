@@ -17,7 +17,8 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:background="@color/white"
+        android:imeOptions="actionSearch"
+        android:background="@drawable/fondo_search"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:paddingLeft="10dp"
@@ -25,16 +26,7 @@
         android:drawableRight="@drawable/baseline_search_24"
         android:hint="Escriba el lugar que desea buscar"/>
 
-    <Button
-        android:id="@+id/btn_registro"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:text="Registrar"
-        android:layout_above="@id/btn_login"
-        android:layout_alignStart="@id/btn_login"
-        android:onClick="goRegister"
-        android:backgroundTint="@color/vibrant_blue"
-        />
+
     <Button
         android:id="@+id/btn_login"
         android:layout_width="150dp"

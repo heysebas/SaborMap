@@ -1,4 +1,4 @@
 package com.hey.sabormap.modelo
 
-class Category(var id:Int, var name:String) {
+class Category(var id:Int, var name:String, var icon:Int) {
 }

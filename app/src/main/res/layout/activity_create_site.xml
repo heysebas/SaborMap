@@ -1,10 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity.CreateSiteActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".activity.CreateSiteActivity">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_site_layout"
+            style="@style/til_form">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_site"
+                style="@style/til_form_inter"
+                android:hint="@string/name_site" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/description_site_layout"
+            style="@style/til_form"
+            android:layout_height="120dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description_site"
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:gravity="left"
+                android:background="@drawable/fondo_forms"
+                android:hint="@string/description" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/direccion_layout"
+            style="@style/til_form">
+
+            <EditText
+                android:id="@+id/direccion_lugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_forms"
+                android:hint="Dirrecion"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/category_site"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/fondo_forms"/>
+
+        <Spinner
+            android:id="@+id/city_site"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/fondo_forms"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="16dp"
+            android:id="@+id/phone_layout"
+            style="@style/til_form">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_site"
+                style="@style/til_form_inter"
+                android:hint="@string/phone_site" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_register_site"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/gray_blue"
+            android:text="@string/btn_register_site" />
+
+    </LinearLayout>
+</ScrollView>

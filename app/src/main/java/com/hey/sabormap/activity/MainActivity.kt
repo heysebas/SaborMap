@@ -12,14 +12,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun goRegister(v: View) {
-        val intent = Intent(this, RegisterActivity::class.java)
-        startActivities(arrayOf(intent))
-    }
 
     fun goLogin(v: View) {
         val intent = Intent(this, LoginActivity::class.java)
         startActivities(arrayOf(intent))
+//        val intent = Intent(this, CreateSiteActivity::class.java)
+//        startActivities(arrayOf(intent))
     }
 
     fun goCreateSite(v: View) {
