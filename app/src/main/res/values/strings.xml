@@ -21,7 +21,6 @@
     <string name="btn_register">Registrar</string>
 
 
-
     <!-- **********************   Error *******************************-->
     <string name="msg_error">Obligatorio</string>
 
@@ -32,7 +31,6 @@
     <string name="phone_site">Ingrese el numero celular</string>
     <!--******************  Button Register site **********************-->
     <string name="btn_register_site">Registrar Sitio</string>
-
 
 
 </resources>

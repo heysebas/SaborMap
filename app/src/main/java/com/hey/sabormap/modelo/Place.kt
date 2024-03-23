@@ -19,9 +19,8 @@ class Place(
     var im:ArrayList<String> = ArrayList()
     var date: Date = Date()
     var schedules:ArrayList<Schedule> = ArrayList()
-
     override fun toString(): String {
-        return "Place(id=$id, name='$name', description='$description', idCreator=$idCreator, state=$state, idCategory=$idCategory, latitude=$latitude, length=$length, idCity=$idCity, phone=$phone, im=$im, date=$date, schedules=$schedules)"
+        return "Place(id=$id, name='$name', description='$description', idCreator=$idCreator, state=$state, idCategory=$idCategory, address='$address', latitude=$latitude, length=$length, idCity=$idCity, phone=$phone, im=$im, date=$date, schedules=$schedules)"
     }
 
 

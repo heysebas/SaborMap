@@ -48,6 +48,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/direccion_layout"
+            android:layout_marginTop="16dp"
             style="@style/til_form">
 
             <EditText
@@ -63,7 +64,6 @@
             android:id="@+id/category_site"
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:layout_marginTop="16dp"
             android:background="@drawable/fondo_forms"/>
 
         <Spinner

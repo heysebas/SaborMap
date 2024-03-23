@@ -15,6 +15,28 @@ object Places {
 
         val lugar1 = Place(1, "Café ABC", "Excelente café para compartir", 1, StatePlace.ACEPTADO, 2, "Calle 123",73.3434f, -40.4345f, 1)
         lugar1.schedules.add(horario2)
+
+        val lugar2 = Place(2, "Bar City Pub", "Bar en la ciudad de Armenia", 2, StatePlace.ACEPTADO, 5, "Calle 12 # 23-1",73.3434f, -40.4345f, 1)
+        lugar2.schedules.add(horario1)
+
+        val lugar3 = Place(3, "Restaurante Mi Cuate", "Comida Mexicana para todos", 3, StatePlace.ACEPTADO, 3, "Calle 452",73.3434f, -40.4345f, 5)
+        lugar3.schedules.add(horario1)
+
+        val lugar4 = Place(4, "BBC Norte Pub", "Cervezas BBC muy buenas", 1, StatePlace.ACEPTADO, 1, "Calle 53",73.3434f, -40.4345f, 3)
+        lugar4.schedules.add(horario3)
+
+        val lugar5 = Place(5, "Hotel barato", "Hotel para ahorrar mucho dinero", 1, StatePlace.ACEPTADO, 1, "Calle 23 # 34-1",73.3434f, -40.4345f, 1)
+        lugar5.schedules.add( horario1 )
+
+        val lugar6 = Place(6, "Hostal Hippie", "Alojamiento para todos y todas", 2, StatePlace.SIN_REVISAR, 1, "Carrera 123",73.3434f, -40.4345f, 2)
+        lugar6.schedules.add( horario2 )
+
+        list.add( lugar1 )
+        list.add( lugar2 )
+        list.add( lugar3 )
+        list.add( lugar4 )
+        list.add( lugar5 )
+        list.add( lugar6 )
     }
 
 
