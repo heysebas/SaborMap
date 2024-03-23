@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Recycler
 import com.hey.sabormap.R
 import com.hey.sabormap.activity.DetalleLugarActivity
+import com.hey.sabormap.db.Categorys
 import com.hey.sabormap.modelo.Place
 
 class PlaceAdapter(var list:ArrayList<Place>): RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
@@ -30,6 +31,8 @@ class PlaceAdapter(var list:ArrayList<Place>): RecyclerView.Adapter<PlaceAdapter
         val address:TextView = itemView.findViewById(R.id.address_place)
         val state:TextView = itemView.findViewById(R.id.state_place)
         val img:ImageView = itemView.findViewById(R.id.img_place)
+        val ico:ImageView = itemView.findViewById(R.id.icon_place)
+        val category:TextView = itemView.findViewById(R.id.category_place)
         var codePlace: Int=0
 
         init {
@@ -41,6 +44,8 @@ class PlaceAdapter(var list:ArrayList<Place>): RecyclerView.Adapter<PlaceAdapter
             address.text = place.address
             state.text = "Abierto"
             codePlace = place.id
+            ico.setImageResource(Categorys.ontener(place.idCategory)!!.icon)
+            category.text = Categorys.ontener(place.idCategory)!!.name
 
         }
 

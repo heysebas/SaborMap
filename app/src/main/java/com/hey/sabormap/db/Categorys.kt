@@ -9,11 +9,11 @@ object Categorys {
     private var categorys:ArrayList<Category> = ArrayList()
 
     init{
-        categorys.add(Category(1, "Árabe", 1));
+        categorys.add(Category(1, "Árabe", R.drawable.arabe));
         categorys.add(Category(2, "Africana", R.drawable.africana));
         categorys.add(Category(3, "Asiática", R.drawable.asiatica));
-        categorys.add(Category(4, "Casera", 1));
-        categorys.add(Category(5, "Caribeña", 1));
+        categorys.add(Category(4, "Casera", R.drawable.casera));
+        categorys.add(Category(5, "Caribeña", R.drawable.caribena));
         categorys.add(Category(6, "Francesa", 1));
         categorys.add(Category(7, "Fusión", 1));
         categorys.add(Category(8, "Gourmet", 1));
