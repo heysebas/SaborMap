@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,31 +11,64 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DFDFDF"/>
+        android:background="#DFDFDF" />
 
     <EditText
         android:id="@+id/textSearch"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:imeOptions="actionSearch"
-        android:singleLine="true"
-        android:background="@drawable/fondo_search"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
+        android:background="@drawable/fondo_search"
+        android:drawableRight="@drawable/baseline_search_24"
+        android:hint="Escriba el lugar que desea buscar"
+        android:imeOptions="actionSearch"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:drawableRight="@drawable/baseline_search_24"
-        android:hint="Escriba el lugar que desea buscar"/>
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSearch"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:text="Lo mas recomendado"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/dark_Gray"
+            android:padding="13dp"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="13dp"
+                android:text="Lo mas recomendado 2"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:text="Login"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:onClick="goLogin"
-        />
+        android:text="Login" />
 
 </RelativeLayout>
