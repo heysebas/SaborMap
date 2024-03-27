@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,6 +8,11 @@
     android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,7 +20,7 @@
 
     <EditText
         android:id="@+id/textSearch"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
@@ -25,9 +30,12 @@
         android:imeOptions="actionSearch"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
 
     <LinearLayout
+        android:id="@+id/popular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textSearch"
@@ -43,23 +51,111 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             android:background="@color/dark_Gray"
-            android:padding="13dp"
-            android:orientation="horizontal">
-            <TextView
+            android:orientation="horizontal"
+            android:padding="13dp">
 
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_folk_place"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="13dp"
-                android:text="Lo mas recomendado 2"
-                android:textSize="17sp" />
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
 
 
         </LinearLayout>
 
 
     </LinearLayout>
+
+
+    **************************************************
+
+    <LinearLayout
+        android:id="@+id/recomendaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popular"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:text="Lo mas recomendado"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_Gray"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_folk_place2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    ***************************************************
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recomendaciones"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:text="Lo mas recomendado"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_Gray"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_folk_place3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    ****************************************************
 
 
     <Button
@@ -70,5 +166,6 @@
         android:layout_alignParentBottom="true"
         android:onClick="goLogin"
         android:text="Login" />
+    </LinearLayout>
 
-</RelativeLayout>
+</ScrollView>

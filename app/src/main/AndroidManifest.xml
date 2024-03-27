@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SaborMap"
         tools:targetApi="31">
         <activity
+            android:name=".activity.FolkResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SearchResultActivity"
             android:exported="false" />
         <activity
@@ -23,19 +26,20 @@
             android:exported="false" />
         <activity
             android:name=".activity.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.CreateSiteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.CreateSiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

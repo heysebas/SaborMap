@@ -1,3 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ************************ Login *******************************-->
+    <string name="enter_email_login">Enter your email</string>
+    <string name="enter_password_login">Enter your password</string>
+    <!--********************  Button Login   **************************-->
+    <string name="btn_star_login">Start</string>
+    <string name="btn_lost_password_login">Lost your password?</string>
+    <string name="btn_sing_up_login">Don\'t have an account? Sign up</string>
+    <string name="btn_google_login">Continue with Google</string>
+    <!-- ****************** Register site *****************************-->
+    <!-- ********************** Register ******************************-->
+    <string name="name_user">Enter first names</string>
+    <string name="last_name_user">Enter last names</string>
+    <string name="email_user">Enter email</string>
+    <string name="nickname_user">Enter Username</string>
+    <string name="password_user">Enter password</string>
+    <string name="password_seco_user">Repeat password</string>
+    <!--********************  Button Register   **********************-->
+    <string name="btn_register">Register</string>
+
+    <!-- **********************   Error *******************************-->
+    <string name="msg_error">Required</string>
+
+    <!-- ****************** Register site *****************************-->
+    <string name="name_site">Enter the name of the place</string>
+    <string name="description">Description</string>
+    <string name="phone_site">Enter the cell phone number</string>
+    <!--******************  Button Register site **********************-->
+    <string name="btn_register_site">Register Site</string>
+
 </resources>

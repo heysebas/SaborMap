@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources >
 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/gray_blue</item>
+    </style>
+
     <style name="til_form">
         <item name="android:layout_width">300dp</item>
         <item name="android:layout_height">80dp</item>
@@ -29,5 +33,10 @@
 
 
     <style name="DialogoTitulo" parent="ThemeOverlay.AppCompat.Dialog.Alert"></style>
+
+
+    <style name="Splashcreen" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splashcreen</item>
+    </style>
 
 </resources>
